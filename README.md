@@ -1,18 +1,18 @@
 # Fake News Detection with TensorFlow
 
-This project implements a fake news detection model using TensorFlow and pre-trained GloVe word embeddings. It classifies news headlines as real or fake based on the news title. [page:1]
+This project implements a fake news detection model using TensorFlow and pre-trained GloVe word embeddings. It classifies news headlines as real or fake based on the news title.
 
 ## Dataset
 
-- Source: Fake news dataset from GeeksforGeeks (news.csv: title, text, label = REAL/FAKE). [page:1]
-- Labels are encoded to numeric values using `LabelEncoder`. [page:1]
+- Source: Fake news dataset from GeeksforGeeks (news.csv: title, text, label = REAL/FAKE).
+- Labels are encoded to numeric values using `LabelEncoder`. 
 
 ## Model
 
-- Embedding layer initialized with GloVe 50d vectors (glove.6B.50d.txt). [page:1]
-- Architecture: Embedding → Dropout → Conv1D → MaxPooling1D → LSTM(64) → Dense(1, sigmoid). [page:1]
-- Trained for 50 epochs on 3,000 samples (title only), with a 10% validation split. [page:1]
-- Observed performance: ~98% training accuracy and ~74–77% validation accuracy, with some overfitting. [page:1]
+- Embedding layer initialized with GloVe 50d vectors (glove.6B.50d.txt).
+- Architecture: Embedding → Dropout → Conv1D → MaxPooling1D → LSTM(64) → Dense(1, sigmoid).
+- Trained for 50 epochs on 3,000 samples (title only), with a 10% validation split.
+- Observed performance: ~98% training accuracy and ~74–77% validation accuracy, with some overfitting.
 
 ## Project Structure
 
